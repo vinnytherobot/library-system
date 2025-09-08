@@ -20,4 +20,7 @@ export interface updateUserType {
 
 export interface ExtendedRequest extends Request {
     userId?: string;
+    body: any;
+    params: any;
+    headers: any;
 }
