@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
 import { editBook, findBookById, getBooks, newBook, removeBook } from "../services/book";
 import { sendSuccessResponse } from "../utils/sucess";
-import { ExtendedRequest } from "../types/user";
+import type { ExtendedRequest } from "../types/user";
 import { UpdateBookType } from "../types/book";
 import { NotFoundError } from "../utils/errors";
 

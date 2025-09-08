@@ -1,7 +1,7 @@
 import { NextFunction, Response, Request } from "express";
 import { completeLoan, getLoans, newLoan } from "../services/loan";
 import { sendSuccessResponse } from "../utils/sucess";
-import { ExtendedRequest } from "../types/user";
+import type { ExtendedRequest } from "../types/user";
 
 // Get all loans on DB
 export async function getAllLoans(request: Request, response: Response, next: NextFunction) {
