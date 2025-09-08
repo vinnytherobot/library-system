@@ -18,6 +18,10 @@ export interface updateUserType {
     email?: string;
 }
 
-export interface ExtendedRequest extends Request {
+export interface ExtendedRequest<
+    BodyType = any,
+    ParamsType = any,
+    QueryType = any
+> extends Request<ParamsType, any, BodyType, QueryType> {
     userId?: string;
 }
